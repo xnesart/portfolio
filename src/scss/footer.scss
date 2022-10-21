@@ -1,8 +1,7 @@
 //====================================================================================================
 .footer {
     background-color: rgb(88, 70, 70);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 2.13);
-
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2.13);
 
     // .footer__container
     &__container {
@@ -38,6 +37,14 @@
         row-gap: rem(20);
         @media (max-width: $mobile) {
             justify-content: center;
+        }
+    }
+    // .footer__git
+    &__git {
+        transition: transform 0.5s ease 0s;
+        &:hover {
+            color: #46b6a0;
+            transform: scale(1.1);
         }
     }
     // .footer__email
